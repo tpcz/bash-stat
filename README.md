@@ -1,11 +1,9 @@
-Trivial statistical utils callable from bash
-============================================
+Trivial statistics utils callable in bash style
+===============================================
 
 Examples:
 ---------
 
-
-echo "1 2 3 4 5 3 2 1 2 1 2 3 4 5"| basestats.py
 
 $ echo "1 2 3 4 5 3 2 1 2 1 2 3 4 5"| basestats.py
 
@@ -20,7 +18,8 @@ Var   :  1.77551020408
 
 $ echo "1 2 3 4 5 3 2 1 2 1 2 3 4 5"| hist.py --nbins 50 --titlex "Time to generate key [s]" --xlabel "Time [s]" --ylabel "Rate [observations]" --saveas "time-to-generate-key" &
 
-# Output: Graph (requires X-Server connection)
+[[ Output: Graph (requires X-Server connection)]]
 
-# or more realistic: 
-# cat $data | grep Deltas | awk '{print $4}' | hist.py --nbins 50 --titlex "Time to generate key [s]" --xlabel "Time [s]" --ylabel "Rate [observations]" --saveas "time-to-generate-key" &
+$ cat $data | grep Deltas | awk '{print $4}' | hist.py --nbins 50 --titlex "Time to generate key [s]" --xlabel "Time [s]" --ylabel "Rate [observations]" --saveas "time-to-generate-key" &
+
+[[ Output: Graph (requires X-Server connection)]]
